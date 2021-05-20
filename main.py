@@ -1,27 +1,14 @@
-import requests
+from flask import Flask
 from nltk.corpus import wordnet
 from itertools import islice
-import re
 import random
 
-# words.txt sourced from https://github.com/dwyl/english-words
-# Filename of words list - 466k English words
-filename = "media/words.txt"
 
 
-# Build dictionary of words
-words_dict = {}
 
-print("Building dictionary...")
-with open(filename, 'r') as input_file:
-    for line in input_file:
-        word = line.strip()
-        syns = wordnet.synsets(word)
-        if syns:
-            words_dict[word] = syns[0].definition()
 
-print("{0} words imported.".format(len(words_dict)))
 
+"""
 # Sample random outputs
 running = True
 words = 0
@@ -37,5 +24,6 @@ while running:
     else:
         # Print X random words where X is input
         word = random.choice(list(words_dict.items()))[0]
-        print("{0} — {1}".format(word, words_dict[word]))
+        print("{0} — {1}\nEg. {2}".format(word, words_dict[word]['definition'], words_dict[word]['example']))
         words -= 1
+"""        
