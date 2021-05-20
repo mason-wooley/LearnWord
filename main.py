@@ -10,9 +10,16 @@ import random
 # Flask stuff
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def hello_word():
-    return "<p>Hello, world!</p>"
+    return '<p>Hello, world!</p>'
+
+@app.route('/define/<word>') 
+def define(word):
+    return 'Looking up the definition of {0}....'.format(word)
+
+if __name__ == "__main__": # on running python app.py
+    app.run(debug=True)
 
 """
 # Sample random outputs
