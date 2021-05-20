@@ -1,12 +1,18 @@
 from flask import Flask
-from nltk.corpus import wordnet
+
 from itertools import islice
+from db.build_db import build_db
 import random
 
+# Do not run this unless the DB needs to be rebuilt
+# build_db()
 
+# Flask stuff
+app = Flask(__name__)
 
-
-
+@app.route("/")
+def hello_word():
+    return "<p>Hello, world!</p>"
 
 """
 # Sample random outputs

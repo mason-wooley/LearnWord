@@ -1,2 +1,7 @@
-# Local settings
+# Environment
+*/__pycache__
+/__pycache__
 /.vscode
+
+# Security
+database.ini
