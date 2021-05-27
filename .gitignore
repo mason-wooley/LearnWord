@@ -1,7 +1,13 @@
 # Environment
+env
 */__pycache__
 /__pycache__
 /.vscode
+__pycache__
+*.pyc
 
 # Security
 database.ini
+
+# Django
+*.DS_Store
