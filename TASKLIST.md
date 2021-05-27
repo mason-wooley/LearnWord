@@ -11,8 +11,4 @@
 - [ ] Easier choose 1 of 4 selection (for learning new words potentially)
 - [ ] Particular themes of words for learning (architecture, medieval, flora, etc)
 - [ ] Multiple users
-<<<<<<< HEAD
 - [ ] Accessibility options (text to speech, swipe controls, voice recognition?)
-=======
-- [ ] Accessibility options (text to speech, swipe controls, voice recognition?)
->>>>>>> adding readme and tasklist
