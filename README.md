@@ -5,4 +5,15 @@ Spaced repetition is similar to flash cards in the sense that data is repeatedel
 
 Using [NLTK](https://www.nltk.org/) and [english-words](https://github.com/dwyl/english-words) to build the list of words and their respective definitions.
 
-### This app is not currently finished, but will be an accurate implementation of the spaced repetition learning method once complete.
+# Getting Started
+NLTK requires you to download data in order to run it; instructions can be found here: https://www.nltk.org/data.html
+
+Currently only using the WordNet module.
+
+Run the following to set up the database:
+```
+python manage.py migrate
+pythin manage.py builddictionary
+```
+___
+### <span style="color:#FF8822">Currently under development, but will be an accurate implementation of the spaced repetition learning method once complete.</span>
